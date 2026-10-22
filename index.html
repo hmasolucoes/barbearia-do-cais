@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbearia do Cais</title>
+<meta name="description" content="Barbearia do Cais - desde 1982 - Barreiras, BA">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Work+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#F2EFEE;--fg:#1B1112;--muted:#6B6163;--card:#fff;--line:#DDD5D6;--accent:#5E0202;--on-accent:#fff;--font-display:"Barlow Condensed",ui-sans-serif,system-ui,sans-serif;--font-body:"Work Sans",ui-sans-serif,system-ui,sans-serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#120B0C;--fg:#F1E9EA;--muted:#A39799;--card:#1D1415;--line:#34272A;--accent:#C23B3B;--on-accent:#fff;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:15px;line-height:1.5;padding:40px max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:420px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:28px}
+.hero{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.logo{width:168px;height:168px;border-radius:50%;box-shadow:0 0 0 5px var(--bg),0 0 0 7px var(--accent),0 12px 30px rgba(0,0,0,.25)}
+h1{margin:6px 0 0;font-family:var(--font-display);font-size:40px;font-weight:700;line-height:1;text-transform:uppercase;letter-spacing:.06em}
+.since{margin:0;font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:var(--accent)}
+.bio{margin:4px 0 0;max-width:30ch;color:var(--muted);text-wrap:balance}
+.links{width:100%;display:flex;flex-direction:column;gap:12px}
+.link{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:8px;color:var(--fg);text-decoration:none;font-weight:600}
+.link .arrow{color:var(--accent);font-family:var(--font-display);font-size:22px;line-height:1}
+.link:hover{border-color:var(--accent)}
+.link.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.link.primary .arrow{color:var(--on-accent)}
+.link:focus-visible,.pix button:focus-visible,.hma-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.pix{width:100%;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:8px;display:flex;flex-direction:column;gap:10px}
+.pix-label{margin:0;font-family:var(--font-display);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.pix-key{margin:0;font-weight:600;font-size:18px;overflow-wrap:anywhere;user-select:all}
+.pix-holder{margin:0;font-size:13px;color:var(--muted)}
+.pix button{font:inherit;font-weight:600;cursor:pointer;padding:12px 16px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:var(--on-accent)}
+.pix-status{margin:0;min-height:1.5em;font-size:13px;color:var(--muted)}
+.foot{margin:0;font-size:12px;color:var(--muted);letter-spacing:.04em}
+.hma{width:100%;margin-top:12px;padding:20px 18px;border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.hma-hook{margin:0;font-family:var(--font-display);font-size:20px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.hma-btn{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--fg);color:var(--bg);text-decoration:none;font-weight:600}
+.hma-btn:hover{background:var(--accent);color:var(--on-accent)}
+.hma-contact{margin:0;font-size:12px;line-height:1.6;color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <img class="logo" src="logo.png" alt="Logotipo Barbearia do Cais" width="168" height="168">
+    <h1>Barbearia do Cais</h1>
+    <p class="since">Desde 1982 · Barreiras - BA</p>
+    <p class="bio">🚀 Te ajudo a elevar sua imagem masculina 💈 +120 mil atendimentos em 10 anos 📍 Barreiras BA</p>
+  </header>
+
+  <nav class="links" aria-label="Links da Barbearia do Cais">
+    <a class="link primary" href="https://wa.me/+5577998026667?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener">
+      <span>Agendar pelo WhatsApp</span><span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="link" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener">
+      <span>Instagram</span><span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <section class="pix" aria-labelledby="pix-label">
+      <p class="pix-label" id="pix-label">Chave Pix · CNPJ</p>
+      <p class="pix-key" id="pix-key">41.261.543/0001-40</p>
+      <p class="pix-holder">Jadson Alencar</p>
+      <button type="button" id="pix-copy">Copiar chave Pix</button>
+      <p class="pix-status" id="pix-status" role="status" aria-live="polite"></p>
+    </section>
+  </nav>
+
+  <p class="foot">© Barbearia do Cais</p>
+
+  <footer class="hma">
+    <p class="hma-hook">Quer a sua página de links?</p>
+    <a class="hma-btn" href="https://wa.me/+5577999735965" target="_blank" rel="noopener">Quero minha página de links</a>
+    <p class="hma-contact">HMA Soluções Digitais<br>WhatsApp 77 99973-5965<br>Instagram @digital.hma<br>hmasolucoesdigitais@gmail.com</p>
+  </footer>
+</main>
+<script>
+(function () {
+  var btn = document.getElementById('pix-copy');
+  var key = document.getElementById('pix-key');
+  var status = document.getElementById('pix-status');
+  function selectKey() {
+    var range = document.createRange();
+    range.selectNodeContents(key);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  btn.addEventListener('click', function () {
+    var text = key.textContent.trim();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        status.textContent = 'Chave copiada!';
+      }).catch(function () {
+        selectKey();
+        status.textContent = 'Não foi possível copiar. A chave está selecionada, copie manualmente.';
+      });
+    } else {
+      selectKey();
+      status.textContent = 'A chave está selecionada, copie manualmente.';
+    }
+  });
+})();
+</script>
+</body>
+</html>
