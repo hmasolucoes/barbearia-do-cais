@@ -38,6 +38,19 @@ h1{margin:6px 0 0;font-family:var(--font-display);font-size:40px;font-weight:700
 .hmaf-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 .hmaf-cta{display:inline-block;margin-top:4px;padding:11px 18px;border-radius:10px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600;font-size:13.5px}
 .hmaf-cta:hover{background:var(--accent);color:var(--on-accent)}
+.igb{width:100%;padding:6px 12px 2px;background:var(--card);border:1px solid var(--line);border-radius:8px}
+.igb .link{padding:10px 4px 14px;background:transparent;border:0;border-radius:0}
+.igb .link:hover{border-color:transparent}
+.rw{position:relative;margin:0 -12px}
+.rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 12px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab}
+.rail::-webkit-scrollbar{display:none}
+.rail.dg{scroll-snap-type:none;cursor:grabbing;user-select:none}
+.pc{position:relative;flex:none;width:160px;aspect-ratio:4/5;scroll-snap-align:start;border-radius:8px;overflow:hidden;background:var(--line);display:block}
+.pc img{display:block;width:100%;height:100%;object-fit:cover;-webkit-user-drag:none}
+.nv{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border-radius:50%;border:1px solid var(--accent);background:var(--card);color:var(--accent);font:400 22px/1 var(--font-display);cursor:pointer;display:grid;place-items:center;padding:0 0 3px}
+.pv{left:20px}.nx{right:20px}
+@media(hover:none){.nv{display:none}}
+@media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -53,9 +66,12 @@ h1{margin:6px 0 0;font-family:var(--font-display);font-size:40px;font-weight:700
     <a class="link primary" href="https://wa.me/+5577998026667?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener">
       <span>WhatsApp</span><span class="arrow" aria-hidden="true">→</span>
     </a>
-    <a class="link" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener">
-      <span>Instagram</span><span class="arrow" aria-hidden="true">→</span>
-    </a>
+    <div class="igb">
+      <a class="link" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener">
+        <span>Instagram</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <div class="rw"><button class="nv pv" type="button" aria-label="Anterior">&#8249;</button><button class="nv nx" type="button" aria-label="Próximo">&#8250;</button><div class="rail" id="rail"><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f5.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f1.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f3.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f4.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f7.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f8.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f2.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f9.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a><a class="pc" href="https://www.instagram.com/jadsonalencaroficial" target="_blank" rel="noopener" aria-label="Abrir Instagram"><img src="https://hmasolucoes.github.io/barbearias-assets/img/f6.webp" alt="" width="480" height="600" loading="lazy" decoding="async"></a></div></div>
+    </div>
     <a class="link" href="https://g.page/r/CSJPS7rtxROIECE/review" target="_blank" rel="noopener">
       <span>Avalie no Google</span><span class="arrow" aria-hidden="true">→</span>
     </a>
@@ -107,6 +123,7 @@ h1{margin:6px 0 0;font-family:var(--font-display);font-size:40px;font-weight:700
   });
 })();
 </script>
+<script>(function(){var r=document.getElementById('rail'),p=0,m=matchMedia('(prefers-reduced-motion:reduce)').matches;function w(){return r.firstElementChild.offsetWidth+10}function nx(){if(p||m||document.hidden)return;if(r.scrollLeft+r.clientWidth>=r.scrollWidth-4)r.scrollTo({left:0,behavior:'smooth'});else r.scrollBy({left:w(),behavior:'smooth'})}setInterval(nx,3400);function hold(){p=1;clearTimeout(hold.t);hold.t=setTimeout(function(){p=0},9000)}r.addEventListener('pointerdown',hold);r.addEventListener('wheel',hold,{passive:true});r.addEventListener('touchstart',hold,{passive:true});var rw=r.parentNode;rw.querySelector('.pv').onclick=function(){hold();r.scrollBy({left:-2*w(),behavior:'smooth'})};rw.querySelector('.nx').onclick=function(){hold();r.scrollBy({left:2*w(),behavior:'smooth'})};var dx=0,sx=0,sl=0,mv=0;r.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||e.button)return;dx=1;mv=0;sx=e.clientX;sl=r.scrollLeft});addEventListener('pointermove',function(e){if(!dx)return;var d=e.clientX-sx;if(Math.abs(d)>4){mv=1;r.classList.add('dg')}if(mv)r.scrollLeft=sl-d});addEventListener('pointerup',function(){if(dx){dx=0;r.classList.remove('dg')}});r.addEventListener('click',function(e){if(mv){e.preventDefault();e.stopPropagation();mv=0}},true);r.addEventListener('dragstart',function(e){e.preventDefault()})})();</script>
 <script>(function(){var ac;document.addEventListener('pointerdown',function(ev){if(!ev.target.closest('a,button,summary'))return;try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();var o=ac.createOscillator(),g=ac.createGain(),t=ac.currentTime;o.type='triangle';o.frequency.setValueAtTime(2400,t);g.gain.setValueAtTime(.18,t);g.gain.exponentialRampToValueAtTime(.001,t+.02);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+.025)}catch(x){}});})();</script>
 </body>
 </html>
